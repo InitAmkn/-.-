@@ -2,7 +2,7 @@
 
 ProductsImpl productsImpl = new ProductsImpl();
 Console.WriteLine("test addProduct:");
-Console.WriteLine(productsImpl.addProduct(new Product("0001","Mike")));
+Console.WriteLine(productsImpl.addProduct(null));
 Console.WriteLine(productsImpl.addProduct(new Product("0001", "Nike")));
 Console.WriteLine(productsImpl.addProduct(new Product("0002", "Sasha")));
 Console.WriteLine(productsImpl.addProduct(new Product("0003", "Sasha")));

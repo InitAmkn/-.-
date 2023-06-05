@@ -13,12 +13,13 @@ namespace НОНТОН.РФ
     //класс для реализации 4 функций
     class ProductsImpl
     {
-        List<Product> products = new List<Product>();
+        private List<Product> products = new List<Product>();
         //добавляет новый продукт
         // возвращает true - если продукта с таким id еще не было
         // возвращает false - если был такой id, вставка отменяется
         public bool addProduct(Product product)
         {
+            if (product == null) return false;
             //реализация
             foreach (Product item in products)
             {
@@ -35,7 +36,8 @@ namespace НОНТОН.РФ
         // возвращает true - если продукт с таким id был
         // возвращает false - если id не было, (удаления не происходит)
         public bool deleteProduct(Product product)
-        { 
+        {
+            if (product == null) return false;
             // реализация
             foreach (Product item in products)
             {
